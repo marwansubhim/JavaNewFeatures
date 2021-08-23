@@ -47,7 +47,7 @@ public class Less2 {
             return result;
         };
 
-        System.out.println(divideNums.nums(4, 20));
+        System.out.println(divideNums.nums(4, 20));// good work
 
     }
 
