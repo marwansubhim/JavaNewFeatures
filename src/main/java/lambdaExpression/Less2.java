@@ -48,6 +48,7 @@ public class Less2 {
         };
 
         System.out.println(divideNums.nums(4, 20));// good work
+        // create more interfaces
 
     }
 
