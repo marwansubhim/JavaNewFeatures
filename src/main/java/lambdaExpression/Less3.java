@@ -39,3 +39,5 @@ public class Less3 {
 interface ArithmeticOperation {
     int performOperation(int a, int b);
 }
+// any interface that has one abstract method will be treated by the compiler as a functional interface
+// we can definitely put as many methods that needs to be implemented by any class through overriding them, but we can't just use lambda representation
