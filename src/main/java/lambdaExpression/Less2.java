@@ -37,6 +37,18 @@ public class Less2 {
 
         System.out.println(sumOfDifference.nums(5, 20));// 0+1+2+3+4
 
+        ReturnMethodWithParams divideNums = (a,b) -> {
+            int result = 0;
+            if (a>b && b!=0){
+                result = a/b;
+            }else if (b>a && a!=0){
+                result = b /a;
+            }
+            return result;
+        };
+
+        System.out.println(divideNums.nums(4, 20));
+
     }
 
 
