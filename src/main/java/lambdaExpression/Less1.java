@@ -45,10 +45,10 @@ public class Less1 {
     }
 
     private static void voidWithParams() {
-        voidWithParameters printMessage1 = (input) -> System.out.println("my input is " + input);
+        VoidWithParameters printMessage1 = (input) -> System.out.println("my input is " + input);
         printMessage1.printInput("Marwan");
 
-        voidWithParameters printThisName = (name) -> {
+        VoidWithParameters printThisName = (name) -> {
             String greeting = "Good afternoon";
             System.out.println(greeting.toUpperCase() + " " + name.toLowerCase());
         };
@@ -95,7 +95,7 @@ interface VoidWithNoParameters {
 }
 
 @FunctionalInterface
-interface voidWithParameters {
+interface VoidWithParameters {
     void printInput(String input);
 }
 
