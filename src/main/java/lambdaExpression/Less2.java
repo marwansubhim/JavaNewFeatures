@@ -54,7 +54,7 @@ public class Less2 {
 
 
 }
-
+// Remember that functional interface accepts only ONE abstract method when we intend to use it for Lambda Expressions
 @FunctionalInterface
 interface ReturnMethodWithParams {
 
