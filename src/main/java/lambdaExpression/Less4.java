@@ -39,7 +39,7 @@ public class Less4 {
  * It can implement the interfaces with any number of abstract methods inside them,                               It can implement the interface which has one method called Functional Interface
  * They can be instantiated and can extend abstract and concrete classes                                          They can't be instantiated and can't extend abstract and concrete classes
  * Instance variables can be declared and "this" inside it always refer to the current inner class                Only local variables can be declared and "this" inside it always refer to the outer enclosing class
- * Memory isndie heap will be allocated on demand whenever we create an object for it                             Permanent memory (Method area) will be allocated for it
- *
+ * Memory inside heap will be allocated on demand whenever we create an object for it                             Permanent memory (Method area) will be allocated for it
+ * Anonymous class objects get stored inside the heap                                                             Lambda get stored inside the stack
  *
  */
