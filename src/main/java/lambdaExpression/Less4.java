@@ -29,9 +29,16 @@ public class Less4 {
         System.out.println("The sum with lambda is: "+sum.performOperation(firstInt,secondInt));
         System.out.println("The subtract with lambda is: "+sub.performOperation(firstInt,secondInt));
         System.out.println("The multiplication with lambda is: "+multi.performOperation(firstInt,secondInt));
+        SayWhateverYouWant hi = (a) -> System.out.println("Hello "+a);
+
+        hi.HelloInput("Marwan");
+
     }
 }
-
+@FunctionalInterface
+interface SayWhateverYouWant{
+    void HelloInput(String input);
+}
 
 /**
  * Anonymous Class                                                                                   vs                      Lambda Expression
