@@ -10,6 +10,14 @@ public class Less1 {
 
         System.out.println(mathOperation.performOperation(3, 2));
         mathOperation.performAdd(5,8);
+
+        Runnable runnable = ()-> System.out.println("Hello");
+
+        runnable.run();
+
+        Comparable comparable = (a)-> 5;
+
+        System.out.println(comparable.compareTo(5) == 5);
     }
 
 }
