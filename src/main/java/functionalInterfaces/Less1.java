@@ -31,4 +31,6 @@ interface MathOperation{
       System.out.println(res);
   }
 
+
+
 }
