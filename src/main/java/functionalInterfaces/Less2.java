@@ -22,7 +22,7 @@ public class Less2 {
             return ((a * minimumWeekly) + (1.5 * a * overTime)) * 4 * 12;
         };
 
-        System.out.println(salary.performSalaryCalculation(42,91));
+        System.out.println(salary.performSalaryCalculation(75,40));
 
 
     }
