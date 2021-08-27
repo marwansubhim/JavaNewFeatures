@@ -15,6 +15,20 @@ public class Less2 {
 
         System.out.println("yearly salary is " + yearlySalary);
 
+        CalculateSalary salary = (a, b) -> {
+            double minimumWeekly = 40;
+            double overTime = b - minimumWeekly;
+
+            return ((a * minimumWeekly) + (1.5 * a * overTime)) * 4 * 12;
+        };
+
+        System.out.println(salary.performSalaryCalculation(42,91));
+
 
     }
+}
+
+interface CalculateSalary{
+
+    double performSalaryCalculation(double hourlyRate, double weeklyHours);
 }
