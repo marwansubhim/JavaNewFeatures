@@ -29,8 +29,17 @@ public class Less2 {
 
     }
 }
-
+@FunctionalInterface
 interface CalculateSalary{
 
     double performSalaryCalculation(double hourlyRate, double weeklyHours);
+}
+
+
+@FunctionalInterface
+interface MySalary extends CalculateSalary{
+    // When we don't have any abstract method in an annotated interface we get compilation error but
+    // if we us inheritance by extending a valid functional interface it will compile just fine because it lined up with the rules
+    // of functional interface
+
 }
