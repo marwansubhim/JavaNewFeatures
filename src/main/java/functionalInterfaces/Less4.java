@@ -49,7 +49,7 @@ public class Less4 {
         };
         System.out.println(squareOpsBy2.apply(2));
 
-        // Chaining the function methods using andThen()
+        // Chaining the function methods using andThen() which will invoke the first operation and then execute the second operation
         squareOpsBy2 = squareOpsBy2.andThen(a ->{
 
             System.out.println("triple operation");
@@ -72,6 +72,8 @@ public class Less4 {
             return a /3;
         });
         System.out.println(divOperation.apply(36));
+
+        // In the compose method the second operation will be executed first and then the first operation will be executed
 
 
     }
