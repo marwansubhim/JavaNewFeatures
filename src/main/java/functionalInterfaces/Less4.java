@@ -15,22 +15,21 @@ public class Less4 {
     public static void main(String[] args) {
 
         // Creating a function that converts a string to lower case
-        Function<String, String> lowerString = input -> input.toLowerCase();
+        Function<String, String> lowerString = String::toLowerCase;
 
         System.out.println("Converting this string to lower case is " + lowerString.apply("REALllLL"));
 
         // Creating a function that converts a string to upper case
 
-        Function<String, String> upperString = input -> input.toUpperCase();
+        Function<String, String> upperString = String::toUpperCase;
 
         System.out.println("Converting this string to upper case is " + upperString.apply("true"));
 
 
         // Create a function that takes two lists of integers and return the even numbers in a list
         Predicate<Integer> isEven = i -> i % 2 == 0;
-        Function<List<Integer>, List<Integer>> myEvenList = i -> {
-           return i.stream().filter(isEven).collect(Collectors.toList());
-        };
+        Function<List<Integer>, List<Integer>> myEvenList = i -> i.stream().filter(isEven).collect(Collectors.toList());
+
         System.out.println("my even list is "+myEvenList.apply(new ArrayList<>(Arrays.asList(1,2,3,4,5,6))));
 
         // Create a function that takes two lists of integers and return the odd numbers in a list
