@@ -16,9 +16,25 @@ public class CustomFunctionalInterface {
 
         System.out.println("**********************");
 
-        DataFunction<String> reverse = a -> new StringBuilder(a).reverse().toString();
+        DataFunction<String> reverse1 = a -> new StringBuilder(a).reverse().toString();
 
         // if we have only one parameter we can exclude parenthesis , same thing with body we can exclude curly braces if we have one statement
-        System.out.println(reverse.function("Mahdi"));
+        System.out.println(reverse1.function("Mahdi"));
+        DataFunction<String> reverse = (s) -> {
+            String result = "";
+            for(int i = s.length()-1; i >=0; i--)
+                result += s.charAt(i);
+            return result;
+        };
+
+        String str1 =  reverse.function("Cybertek");
+        System.out.println(str1);
+
+        System.out.println("-------------------------------");
+
+        DataFunction<Integer> cube = n -> n*n*n ;
+
+        int r1 = cube.function(10);
+        System.out.println(r1);
     }
 }
