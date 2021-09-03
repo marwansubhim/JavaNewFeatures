@@ -77,6 +77,16 @@ public class StreamPractice {
                 .reduce("", (a, b) -> a + " " + b);
 
         System.out.println(palindromes);
+        System.out.println("********************");
+
+        List<Integer> list1 = new ArrayList<>(Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9, 40));
+
+        boolean allEven = list1.stream().allMatch(p -> p % 2 == 0);
+        System.out.println(allEven);
+        boolean lessThan11 = list1.stream().allMatch(p-> p<100);
+        System.out.println(lessThan11);
+        boolean hasOneDivisibleBy20 = list1.stream().anyMatch(p -> p%20==0);
+        System.out.println(hasOneDivisibleBy20);
 
 
     }
