@@ -83,9 +83,9 @@ public class StreamPractice {
 
         boolean allEven = list1.stream().allMatch(p -> p % 2 == 0);
         System.out.println(allEven);
-        boolean lessThan11 = list1.stream().allMatch(p-> p<100);
+        boolean lessThan11 = list1.stream().allMatch(p -> p < 100);
         System.out.println(lessThan11);
-        boolean hasOneDivisibleBy20 = list1.stream().anyMatch(p -> p%20==0);
+        boolean hasOneDivisibleBy20 = list1.stream().anyMatch(p -> p % 20 == 0);
         System.out.println(hasOneDivisibleBy20);
 
 

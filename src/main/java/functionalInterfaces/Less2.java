@@ -1,11 +1,18 @@
 package functionalInterfaces;
 
+import java.time.LocalDate;
+import java.util.Date;
+
 /**
  * Created by: Marwan on 8/26/2021 around 9:04 PM
  */
 public class Less2 {
 
     public static void main(String[] args) {
+
+     LocalDate d =  LocalDate.of(1986,4,13);
+        System.out.println("my DOB is "+d);
+        LocalDate.now().getYear();
 
         double hourlyRate = 42;
 
@@ -26,6 +33,11 @@ public class Less2 {
 
         //Hello
 
+        CalculateAge calculateAge = a -> {
+            return LocalDate.now().getYear() -a;
+        };
+
+        System.out.println("My age is "+calculateAge.calcAge(2017));
     }
 }
 @FunctionalInterface
@@ -41,4 +53,9 @@ interface MySalary extends CalculateSalary{
     // if we us inheritance by extending a valid functional interface it will compile just fine because it lined up with the rules
     // of functional interface
 
+}
+
+
+interface CalculateAge{
+    int calcAge(int yearBorn);
 }
