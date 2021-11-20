@@ -35,6 +35,7 @@ public class BiConsumerFunctionalInterface {
            // System.out.println(k+" : "+v)
         });
 
+        // Hey, this what i have done so far
         for (int i =0; i<5; i++){
             System.out.println("Eric Davis");
         }
