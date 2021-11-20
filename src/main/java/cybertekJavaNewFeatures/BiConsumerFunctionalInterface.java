@@ -34,5 +34,9 @@ public class BiConsumerFunctionalInterface {
             if (v.getYear()<2010) System.out.println(k);
            // System.out.println(k+" : "+v)
         });
+
+        for (int i =0; i<5; i++){
+            System.out.println("Eric Davis");
+        }
     }
 }
